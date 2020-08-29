@@ -2,13 +2,14 @@
 .page-header {
     background-color: #ff9400;
     margin-top: 0;
-    padding: 20px 20px 20px 55px;
+    padding: 20px 55px 20px 55px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
+    margin-right: 15px;
 }
 
 .content {
@@ -35,7 +36,6 @@ h1, h2, h3, h4 {
     color: #ffffff;
     float: right;
     font-size: 26pt;
-    margin-right: 20px;
 }
 
 .post {
@@ -44,4 +44,74 @@ h1, h2, h3, h4 {
 
 .post h1 a, .post h1 a:visited {
     color: #000000;
+}
+
+.post_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.post_title_element{
+    align-self: center;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #ff9400;
+    border-color: #ff9400;
+}
+
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: #b96d03;
+    border-color: #b96d03;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #b96d03;
+    border-color: #b96d03;
+}
+
+.btn-primary:focus {
+    color: #fff;
+    background-color: #b96d03;
+    border-color: #b96d03;
+    box-shadow: 0 0 0 0.2rem rgba(234 176 69 / 50%);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(234 176 69 / 50%);
+}
+
+
+.form-control:focus {
+    border-color: #b96d03;
+    box-shadow: 0 0 0 0.2rem rgba(234 176 69 / 50%);
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #b96d03;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: #b96d03;
 }
